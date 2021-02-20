@@ -1,6 +1,10 @@
-//Autor: Roberto Vallecillos.
-//Modificación: 04-02-2021
-//Interface: Stack<E>
+/*******************************************************
+* Universidad del Valle de Guatemala
+* Algoritmos y Estructuras de Datos
+* Profesor: Moises Gonzales
+* Autor: Stefano Aragoni, Roberto Vallecillos
+*
+********************************************************/
 
 public interface Stack_1<E> 
 {

@@ -6,10 +6,14 @@
 *
 ********************************************************/
 
-public abstract class Stack_Abs<E> implements Stack_1<E>
-{
-    public boolean empty(){
-      // post: returns true if empty
-      return size() == 0;
-   }
+public class DoubleNode<E> {
+	public E value;
+	public DoubleNode<E> next;
+	public DoubleNode<E> prev;
+	
+	public DoubleNode(E element) {
+		next = null;
+		prev = null;
+		value = element;
+	}
 }

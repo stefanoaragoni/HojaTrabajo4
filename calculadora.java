@@ -1,3 +1,11 @@
+/*******************************************************
+* Universidad del Valle de Guatemala
+* Algoritmos y Estructuras de Datos
+* Profesor: Moises Gonzales
+* Autor: Stefano Aragoni, Roberto Vallecillos
+*
+********************************************************/
+
 public interface calculadora 
 {
 
@@ -40,7 +48,7 @@ public interface calculadora
     * @return resultado de la operacion
     * @param el stack para realizar el trabajo
     */
-    public int operar(stack x);//operar recibe un stack en formato postfix, y lo opera para devolver un entero que es igual al valor total de la operación
+    public int operar(String x, Stack_1<String> stackInt);//operar recibe un stack en formato postfix, y lo opera para devolver un entero que es igual al valor total de la operación
     
     /**
     * Metodo para restar dos numeros
@@ -48,5 +56,5 @@ public interface calculadora
     * @return String donde muestra los numeros de entrada y la clase de operaciones
     * @param a nombre de archivo
     */
-    public String decode(String a);//función que se encarga de leer el archivo y decodificar cada línea para realizar las operaciones de cada una
+    public String decode(String a, Stack_1<String> b, Stack_1<String> c);//función que se encarga de leer el archivo y decodificar cada línea para realizar las operaciones de cada una
 }

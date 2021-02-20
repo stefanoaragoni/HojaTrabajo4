@@ -1,6 +1,10 @@
-//Autor: Roberto Vallecillos.
-//Modificación: 04-02-2021
-//Class: stack<E>
+/*******************************************************
+* Universidad del Valle de Guatemala
+* Algoritmos y Estructuras de Datos
+* Profesor: Moises Gonzales
+* Autor: Stefano Aragoni, Roberto Vallecillos
+*
+********************************************************/
 
 import java.util.ArrayList;
 
@@ -8,7 +12,7 @@ public class StackVector<E> extends Stack_Abs<E>
 {
 	protected ArrayList<E> data;
 
-	public stack()
+	public StackVector()
 	// post: constructs a new, empty stack
 	{
 		data = new ArrayList<E>();
@@ -39,6 +43,12 @@ public class StackVector<E> extends Stack_Abs<E>
 	// post: returns the number of elements in the stack
 	{
 		return data.size();
+	}
+
+  public boolean empty()
+	// post: returns the number of elements in the stack
+	{
+		return data.size() == 0;
 	}
   
 }

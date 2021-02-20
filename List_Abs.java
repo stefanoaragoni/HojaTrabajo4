@@ -1,14 +1,19 @@
+/*******************************************************
+* Universidad del Valle de Guatemala
+* Algoritmos y Estructuras de Datos
+* Profesor: Moises Gonzales
+* Autor: Stefano Aragoni, Roberto Vallecillos
+*
+********************************************************/
+
 public abstract class List_Abs<E> implements List_1<E>{
 
   public List_Abs(){
 
   }
 
-  public boolean IsEmpty(){
-    return size() = 0;
+  public boolean empty(){
+    return count() == 0;
   }
 
-  public boolean contains(E value){
-    return -1 !=indexOf(value);
-  }
 }
