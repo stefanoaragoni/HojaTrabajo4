@@ -24,6 +24,7 @@ public interface Stack_1<E>
     * @return devuelve el item más reciente que se metio en el stack
     */
    public E pop();
+   
    // pre: stack is not empty
    // post: most recently pushed item is removed and returned
    /**

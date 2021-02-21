@@ -12,60 +12,71 @@ public class SinglyLinkedList<E> extends List_Abs<E> {
 
 	protected LinkedList<E> core;
 	
+	/**
+    * Constructor de la clase
+    */
 	public SinglyLinkedList() {
 		core = new LinkedList<E>();
 	}
 	
-	@Override
+	/**
+    * Metodo insertar 
+	*@param E elemento generico que se almacenara
+    * @return boolean que indica si se completo la accion
+    */
 	public boolean insert(E element) {
+		// pre: verify if its the first node or not
+   		// post: item is added to List
 		return core.add(element);
 	}
 
-	@Override
-	public boolean insertAt(E element, int index) {
-		core.add(index, element);
-		return true; //If no issue appear, add the element
-	}
-
-	@Override
-	public boolean insertAtStart(E element) {
-		core.addFirst(element);
-		return false;
-	}
-
-	@Override
+	/**
+    * Metodo insertar 
+	*@param E elemento generico que se almacenara
+    *@return boolean que indica si se completo la accion
+    */
 	public boolean insertAtEnd(E element) {
+		// pre: verify if its the first node or not
+   		// post: item is added to List
 		core.addLast(element);
 		return false;
 	}
 
-	@Override
-	public E removeAt(int index) {
-		return core.remove(index);
-	}
-
-	@Override
-	public E removeAtStart() {
-		return core.removeFirst();
-	}
-
-	@Override
+	/**
+    * Metodo para sacar el articulo mas reciente
+    * @return devuelve el item E más reciente que se metio a la lista
+    */
 	public E removeAtEnd() {
+		// pre: lista is not empty
+   		// post: most recently pushed item is removed and returned
 		return core.removeLast();
 	}
 
-  @Override
+	/**
+    * Metodo revisar el articulo mas reciente
+    * @return devuelve el item E más reciente que se metio a la lista, sin borrarlo
+    */
 	public E get() {
+		// pre: list is not empty
+   		// post: top value (next to be popped) is returned
 		return core.getLast();
 	}
 
-	@Override
+	/**
+    * Metodo revisar el tamaño de la lista
+    * @return el tamaño de la lista
+    */
 	public int count() {
+		// post: returns the number of elements in the stack
 		return core.size();
 	}
 
-	@Override
+	/**
+    * Metodo para ver si hay algo en la lista
+    * @return boolean si esta vacio o no
+    */
 	public boolean empty() {
+		// post: returns true if and only if the list is empty
 		return core.isEmpty();
 	}
 
